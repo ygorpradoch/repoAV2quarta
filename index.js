@@ -4,7 +4,8 @@ const PORT = process.env.PORT || 8080;
 
 //criando a rota inicial
 app.get("/", function(req,res){
-    res.send("<h1>Bem vindo ao meu site!</h1>");
+    res.send("<h1>Testee para AV2!</h1>");
+
 })
 
 //rota do cadastro de produtos
@@ -27,7 +28,7 @@ app.get("/cadastro/{:nome}", function(req,res){
     if (nome){
         res.send("<h1>produto " + nome + " criado!</h1>");
     }else{
-        res.send("produto criado!");
+        res.send("produto criadoo!");
     }
     
 })
